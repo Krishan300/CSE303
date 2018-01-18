@@ -1,0 +1,12 @@
+16,18d15
+< 
+<    bool* islockacquired;
+<   mutable std::mutex ourmutex;
+44,46c41,43
+< //mutable std::mutex ourmutex;
+<   // bool* islockacquired;
+<     Node* create_Node(int insert){
+---
+>   mutable std::mutex ourmutex;
+>   bool* islockacquired;
+>   Node* create_Node(int insert){

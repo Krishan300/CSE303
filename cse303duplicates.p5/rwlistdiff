@@ -1,0 +1,26 @@
+7c7
+<   // mutable pthread_rwlock_t lock_rw = PTHREAD_RWLOCK_INITIALIZER;
+---
+>         mutable pthread_rwlock_t lock_rw = PTHREAD_RWLOCK_INITIALIZER;
+9c9
+<   /*	struct Node
+---
+> 	struct Node
+16c16
+< 	Node* head;*/
+---
+> 	Node* head;
+20,26c20,21
+<   private:
+<   mutable pthread_rwlock_t lock_rw = PTHREAD_RWLOCK_INITIALIZER;
+<   struct Node
+<   {
+<     int value;
+<     Node* next;
+<   };
+---
+>   //private:
+>   //mutable pthread_rwlock_t lock_rw = PTHREAD_RWLOCK_INITIALIZER;
+28,29d22
+<   /// The head of the list is referenced by this pointer
+<   Node* head;
